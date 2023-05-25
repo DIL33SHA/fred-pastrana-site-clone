@@ -1,0 +1,128 @@
+:root{
+    --hover-color: rgb(63, 153, 255);
+    --text-color: rgb(255, 255, 255);
+    --medium-font: 20px;
+}
+#navbar{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+.navbar-logo img {
+    width: 90pxpx;
+    height: 70px;
+}
+.scroll-logo{
+    display: none;
+}
+.navbar-link{
+    width: 300px;
+}
+.navbar-link ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.navbar-link ul li{
+    padding-right: 32px;
+}
+.links{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: var(--medium-font);
+}
+.navbar-contact{
+    width: 300px;
+}
+.navbar-contact ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.navbar-contact ul li{
+    padding-left: 8px;
+}
+.social{
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+}
+.linkedin{
+    fill: var(--text-color);
+    width: 32px;
+    height: 32px;
+}
+.email{
+    fill: var(--text-color);
+    width: 32px;
+    height: 32px;
+}
+.linkedin:hover, .email:hover{
+    fill: var(--hover-color);
+    transition: ease 0.3s;
+}
+
+@media screen and (max-width: 850px){
+    .navbar-link{
+        display: none;
+        
+    }
+    .navbar-contact{
+        display: none;
+    }
+    #navbar{
+        display: block;
+    }
+    .navbar-logo{
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+}
+.toggle-menu{
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    float: right;
+}
+.toggle-menu div{
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--text-color);
+}
+.toggle-menu div::before{
+    content: "";
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 0;
+}
+.toggle-menu div::after{
+    content: "";
+    width: 30px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width: 850px) {
+    .toggle-menu{
+        display: flex
+    }
+}
