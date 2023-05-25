@@ -2,6 +2,7 @@
     --hover-color: rgb(63, 153, 255);
     --text-color: rgb(255, 255, 255);
     --medium-font: 20px;
+    --secondar-font: 'Jost', sans-serif;
 }
 #navbar{
     width: 100%;
@@ -35,7 +36,17 @@
 .links{
     text-decoration: none;
     color: var(--text-color);
+    font-family: var(--secondar-font);
     font-size: var(--medium-font);
+    font-weight: 300;
+}
+.links:hover{
+    color: var(--hover-color);
+    transition: ease 0.3s;
+}
+#active{
+    font-weight: 600;
+    color: var(--hover-color);
 }
 .navbar-contact{
     width: 300px;
@@ -69,7 +80,7 @@
     transition: ease 0.3s;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 800px){
     .navbar-link{
         display: none;
         
@@ -121,7 +132,7 @@
     position: absolute;
     bottom: 0;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
     .toggle-menu{
         display: flex
     }
