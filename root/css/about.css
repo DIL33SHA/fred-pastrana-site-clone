@@ -127,6 +127,15 @@ section{
     position: fixed;
     bottom: 40px;
     right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: gray;
+}
+.scrollup a svg{
+    width: 30px;
+    height: 25px;
 }
 
 #contact-form{
@@ -172,4 +181,9 @@ section{
     color: var(--text-color);
     font-size: var(--small-font);
     font-family: var(--secondar-font);
+}
+@media screen and (max-width: 600px) {
+    .scrollup a{
+        display: none;
+    }
 }
