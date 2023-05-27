@@ -17,9 +17,8 @@ html{
 }
 body{
     background-color: var(--primar-color);
-    
 }
-section{
+#page{
     width: 100%;
     position: absolute;
     top: 0;
